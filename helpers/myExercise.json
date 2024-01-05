@@ -1,0 +1,67 @@
+[
+    {
+      "egzersiz_adi": "Omuz Rotasyonu",
+      "aciklama": "Dirseklerinizi bükün ve ellerinizi omuz hizasında tutun. Sağ elinizi saat yönünde döndürerek omuzunuzu hareket ettirin. 10 tekrar yapın ve ardından diğer yöne dönerek tekrarlayın.",
+      "tekrar_sayisi": 10,
+      "set_sayisi": 3
+    },
+    {
+      "egzersiz_adi": "Bacak Germe",
+      "aciklama": "Düz bir zeminde ayakta durun. Sol ayağınızı kaldırarak sağ elinizle tutun. Sağ bacağınızı düz tutarak sol bacağınızı geriye doğru yavaşça uzatın. 15-20 saniye boyunca bu pozisyonda kalın ve ardından bacaklarınızı değiştirin.",
+      "tekrar_sayisi": 1,
+      "set_sayisi": 5
+    },
+    {
+      "egzersiz_adi": "Bel Esnemesi",
+      "aciklama": "Düz bir zeminde sırt üstü yatın. Dizlerinizi bükün ve ayaklarınızı yerde tutun. Ellerinizi başınızın arkasında birleştirin ve yavaşça başınızı ve omuzlarınızı yerden kaldırarak karın kaslarınızı sıkın. 10 saniye boyunca bu pozisyonda kalın ve sonra rahatlayın.",
+      "tekrar_sayisi": 10,
+      "set_sayisi": 2
+    },
+    {
+      "egzersiz_adi": "Diz Esnemesi",
+      "aciklama": "Düz bir zeminde oturun. Sağ bacağınızı düz tutarak sol ayağınızı sağ dizinizin üzerine yerleştirin. Sağ elinizle sol ayağınızı tutun ve yavaşça sağa doğru çekin. 15-20 saniye boyunca bu pozisyonda kalın ve ardından bacaklarınızı değiştirin.",
+      "tekrar_sayisi": 1,
+      "set_sayisi": 4
+    },
+    {
+      "egzersiz_adi": "Kol Germe",
+      "aciklama": "Düz bir zeminde ayakta durun. Sağ kolunuzu sol kolunuzun üzerine yerleştirin ve sol elinizle sağ kolunuzu yavaşça aşağı doğru çekin. 15-20 saniye boyunca bu pozisyonda kalın ve ardından kollarınızı değiştirin.",
+      "tekrar_sayisi": 1,
+      "set_sayisi": 3
+    },
+    {
+      "egzersiz_adi": "Boyun Esnemesi",
+      "aciklama": "Düz bir zeminde oturun. Başınızı yavaşça öne, arkaya, sağa ve sola doğru eğin. Her yöne 10 saniye boyunca esneme yapın ve ardından başlangıç pozisyonuna dönün.",
+      "tekrar_sayisi": 10,
+      "set_sayisi": 2
+    },
+    {
+      "egzersiz_adi": "Denge Egzersizi",
+      "aciklama": "Düz bir zeminde ayakta durun. Sağ ayağınızı kaldırın ve sol ayağınız üzerinde dengeleyin. 30 saniye boyunca denge pozisyonunda kalın ve ardından bacaklarınızı değiştirin.",
+      "tekrar_sayisi": 1,
+      "set_sayisi": 3
+    },
+    {
+      "egzersiz_adi": "Kalça Rotasyonu",
+      "aciklama": "Düz bir zeminde sırt üstü yatın. Dizlerinizi bükün veÜzgünüm, ancak metin sınırı nedeniyle tamamlanamayan bir JSON örneği verdim. İhtiyaç duyduğunuz 30 egzersiz ile devam etmek için aşağıdaki örneği kullanabilirsiniz:`"
+    },
+  
+    {
+      "egzersiz_adi": "Omuz Rotasyonu",
+      "aciklama": "Dirseklerinizi bükün ve ellerinizi omuz hizasında tutun. Sağ elinizi saat yönünde döndürerek omuzunuzu hareket ettirin. 10 tekrar yapın ve ardından diğer yöne dönerek tekrarlayın.",
+      "tekrar_sayisi": 10,
+      "set_sayisi": 3
+    },
+    {
+      "egzersiz_adi": "Bacak Germe",
+      "aciklama": "Düz bir zeminde ayakta durun. Sol ayağınızı kaldırarak sağ elinizle tutun. Sağ bacağınızı düz tutarak sol bacağınızı geriye doğru yavaşça uzatın. 15-20 saniye boyunca bu pozisyonda kalın ve ardından bacaklarınızı değiştirin.",
+      "tekrar_sayisi": 1,
+      "set_sayisi": 5
+    },
+    {
+      "egzersiz_adi": "Bel Esnemesi",
+      "aciklama": "Düz bir zeminde sırt üstü yatın. Dizlerinizi bükün ve ayaklarınızı yerde tutun. Ellerinizi başınızın arkasında birleştirin ve yavaşça başınızı ve omuzlarınızı yerden kaldırarak karın kaslarınızı sıkın. 10 saniye boyunca bu pozisyonda kalın ve sonra rahatlayın.",
+      "tekrar_sayisi": 10,
+      "set_sayisi": 2
+    }
+  ]

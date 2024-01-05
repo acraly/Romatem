@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "Romatem",
+    "slug": "Romatem",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/appstore.jpeg",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/romatem-logo.jpeg",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "*/"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/appstore.jpeg",
+        "backgroundColor": "#FFFFFF"
+      },
+      "package": "metaworldbilisim.com"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "description": "",
+    "extra": {
+      "eas": {
+        "projectId": "8f3aec24-1442-44a9-9fe5-647de47681de"
+      }
+    }
+  }
+}
