@@ -31,6 +31,7 @@
     "react-native-screens": "~3.22.0",
     "react-native-status-bar-height": "^2.6.0",
     "react-native-swiper": "^1.6.0",
+    "react-native-video-player": "^0.14.0",
     "react-native-web": "~0.19.6",
     "styled-components": "^6.1.1"
   },

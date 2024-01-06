@@ -34,6 +34,7 @@ import React from 'react';
 import { View, Text, StyleSheet, ScrollView, Image } from 'react-native';
 import Swiper from 'react-native-swiper';
 import { auth } from '../firebase';
+import VideoPlayer from 'react-native-video-player';
 
 const ExerciseDetail = () => {
   // const exercises = require("../helpers/myExercise.json");
@@ -45,7 +46,14 @@ const ExerciseDetail = () => {
   return (
     <ScrollView  contentContainerStyle={styles.container}>
       <View style={styles.sliderContainer}>
-      <Swiper style={styles.wrapper} showsButtons={true}>
+        <VideoPlayer
+        video={{uri:exercise.video}}
+        autoplay={false}
+        defaultMuted={true}
+        videoWidth={1500}
+        videoHeight={1000}
+        />
+      {/* <Swiper style={styles.wrapper} showsButtons={true}>
       <View syle={{display:`flex`,justifyContent:`center`}}>
       <Image style={styles.sliderImage} source={{uri:'https://fitnessaktif.com/wp-content/uploads/2019/07/bench-press-2.jpg'}} />
 
@@ -53,7 +61,7 @@ const ExerciseDetail = () => {
       <Image style={styles.sliderImage} source={{uri:'https://fitnessaktif.com/wp-content/uploads/2019/07/bench-press-2.jpg'}} />
       <Image style={styles.sliderImage} source={{uri:'https://fitnessaktif.com/wp-content/uploads/2019/07/bench-press-2.jpg'}} />
 
-    </Swiper>
+    </Swiper> */}
 
         {/* Diğer resimler buraya eklenebilir */}
       </View>
