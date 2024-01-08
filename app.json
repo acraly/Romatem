@@ -6,6 +6,14 @@
     "orientation": "portrait",
     "icon": "./assets/appstore.jpeg",
     "userInterfaceStyle": "light",
+    "plugins": [
+      [
+        "expo-av",
+        {
+          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone."
+        }
+      ]
+    ],
     "splash": {
       "image": "./assets/romatem-logo.jpeg",
       "resizeMode": "contain",

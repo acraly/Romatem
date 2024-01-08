@@ -29,10 +29,10 @@ const AppRouter = () => {
 
   const Tab = createBottomTabNavigator();
   const [currentUser, setCurrentUser] = useState();
-  useEffect( () => {
-    AsyncStorage.getItem("TOKEN").then(token => setCurrentUser(token) )
-  }, []);
-  console.log(`currentUser`,currentUser);
+  // useEffect( () => {
+  //   AsyncStorage.getItem("TOKEN").then(token => setCurrentUser(token) )
+  // }, []);
+  // console.log(`currentUser`,currentUser);
 
 
   const LoginStack = () => (

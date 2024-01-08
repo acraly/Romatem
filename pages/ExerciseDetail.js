@@ -1,40 +1,19 @@
-// import { View, Text, Image } from "react-native";
-// import React from "react";
-// import { useRoute } from "@react-navigation/native";
-// import {
-//   Button,
-//   Card,
-//   Avatar,
-//   IconButton,
-//   SliderBox,
-// } from "react-native-paper";
-
-// const LeftContent = (props) => <Avatar.Icon {...props} icon="folder" />;
-// export default function ExerciseDetail() {
-//   const route = useRoute();
-//   const { name, surname, image } = route.params;
-//   return (
-//     <View>
-//       <Card>
-//         <Card.Cover source={{ uri: "https://picsum.photos/700" }} />
-//         <Card.Content>
-//           <Text variant="titleLarge">Card title</Text>
-//           <Text variant="bodyMedium">Card content</Text>
-//         </Card.Content>
-//         <Card.Actions>
-//           <Button>Tamamlandı</Button>
-//         </Card.Actions>
-//       </Card>
-//     </View>
-//   );
-// }
-
 import { useRoute } from '@react-navigation/native';
 import React from 'react';
 import { View, Text, StyleSheet, ScrollView, Image } from 'react-native';
 import Swiper from 'react-native-swiper';
 import { auth } from '../firebase';
-import VideoPlayer from 'react-native-video-player';
+import { Video } from 'expo-av';
+import WebView from 'react-native-webview';
+// import Video from 'react-native-video';
+// import { VideoFullscreenUpdate } from 'expo-av';
+// import VideoPlayer from 'react-native-video-player';
+// import Video from 'react-native-video';
+//  const item = [ {egzersiz_adi: "Kalça Rotasyonu",
+//  aciklama: "Düz bir zeminde sırt üstü yatın. Dizlerinizi bükün veÜzgünüm, ancak metin sınırı nedeniyle tamamlanamayan bir JSON örneği verdim. İhtiyaç duyduğunuz 30 egzersiz ile devam etmek için aşağıdaki örneği kullanabilirsiniz:`"
+// ,tekrar_sayisi: 1,
+//  set_sayisi: 3,
+//  video:"https://metamy.b-cdn.net/media/video/1.D%C3%B6nem/Front-End_Devolopment/10_Veri_T%C3%BCrleri___JAVASCRIPT_Dersleri.mp4"}]
 
 const ExerciseDetail = () => {
   // const exercises = require("../helpers/myExercise.json");
@@ -42,29 +21,21 @@ const ExerciseDetail = () => {
     const route = useRoute();
 
   const { exercise } = route.params;
+  const video = React.useRef(null);
+  const [status,setStatus]=React.useState({})
+
 
   return (
     <ScrollView  contentContainerStyle={styles.container}>
-      <View style={styles.sliderContainer}>
-        <VideoPlayer
-        video={{uri:exercise.video}}
-        autoplay={false}
-        defaultMuted={true}
-        videoWidth={1500}
-        videoHeight={1000}
-        />
-      {/* <Swiper style={styles.wrapper} showsButtons={true}>
-      <View syle={{display:`flex`,justifyContent:`center`}}>
-      <Image style={styles.sliderImage} source={{uri:'https://fitnessaktif.com/wp-content/uploads/2019/07/bench-press-2.jpg'}} />
+     <Video 
+     ref={video}
+     source={{uri:"https://metamy.b-cdn.net/media/video/1.D%C3%B6nem/Front-End_Devolopment/10_Veri_T%C3%BCrleri___JAVASCRIPT_Dersleri.mp4"}}
+     useNativeControls
+     resizeMode='contain'
+     isLooping
+     onPlaybackStatusUpdate={setStatus}
+      />
 
-      </View>
-      <Image style={styles.sliderImage} source={{uri:'https://fitnessaktif.com/wp-content/uploads/2019/07/bench-press-2.jpg'}} />
-      <Image style={styles.sliderImage} source={{uri:'https://fitnessaktif.com/wp-content/uploads/2019/07/bench-press-2.jpg'}} />
-
-    </Swiper> */}
-
-        {/* Diğer resimler buraya eklenebilir */}
-      </View>
       <Text style={styles.exerciseName}>{exercise.egzersiz_adi}</Text>
       <Text style={styles.description}>{exercise.aciklama}</Text>
       <Text style={styles.infoText}>Tekrar Sayısı: {exercise.tekrar_sayisi}</Text>
@@ -111,7 +82,13 @@ const styles = StyleSheet.create({
     height:330,
     textAlign:`center`
   },
-
+  backgroundVideo: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    bottom: 0,
+    right: 0,
+  },
 });
 
 export default ExerciseDetail;
