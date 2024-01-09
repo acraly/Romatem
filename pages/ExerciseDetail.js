@@ -1,6 +1,6 @@
 import { useRoute } from '@react-navigation/native';
 import React from 'react';
-import { View, Text, StyleSheet, ScrollView, Image } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, Image, Button } from 'react-native';
 import Swiper from 'react-native-swiper';
 import { auth } from '../firebase';
 import { Video } from 'expo-av';
@@ -22,20 +22,30 @@ const ExerciseDetail = () => {
 
   const { exercise } = route.params;
   const video = React.useRef(null);
+  // const secondVideo = React.useRef(null);
   const [status,setStatus]=React.useState({})
+  // const [statusSecondVideo,setStatusSecondVideo]=React.useState({})
 
 
   return (
     <ScrollView  contentContainerStyle={styles.container}>
      <Video 
      ref={video}
-     source={{uri:"https://metamy.b-cdn.net/media/video/1.D%C3%B6nem/Front-End_Devolopment/10_Veri_T%C3%BCrleri___JAVASCRIPT_Dersleri.mp4"}}
+     style={styles.video}
+     source={{uri:"https://metamy.b-cdn.net/media/video/1.D%C3%B6nem/Front-End_Devolopment/Solunum_egzersizleri.mp4"}}
      useNativeControls
      resizeMode='contain'
      isLooping
-     onPlaybackStatusUpdate={setStatus}
+    //  onPlaybackStatusUpdate={setStatus}
       />
-
+{/* <View style={styles.buttons}>
+        <Button
+          title={status.isPlaying ? 'Pause' : 'Play'}
+          onPress={() =>
+            status.isPlaying ? video.current.pauseAsync() : video.current.playAsync()
+          }
+        />
+      </View> */}
       <Text style={styles.exerciseName}>{exercise.egzersiz_adi}</Text>
       <Text style={styles.description}>{exercise.aciklama}</Text>
       <Text style={styles.infoText}>Tekrar Sayısı: {exercise.tekrar_sayisi}</Text>
@@ -53,6 +63,12 @@ const styles = StyleSheet.create({
     paddingVertical: 16,
     paddingHorizontal: 16,
   },
+  video:{
+    flex:1,
+    // flexDirection:'column',
+    // justifyContent:'flex-start',
+    alignSelf:'stretch',
+   },
   sliderContainer: {
     flexDirection: 'row',
     marginBottom: 16,
