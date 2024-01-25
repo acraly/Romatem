@@ -16,8 +16,8 @@ import WebView from 'react-native-webview';
 //  video:"https://metamy.b-cdn.net/media/video/1.D%C3%B6nem/Front-End_Devolopment/10_Veri_T%C3%BCrleri___JAVASCRIPT_Dersleri.mp4"}]
 
 const ExerciseDetail = () => {
-  // const exercises = require("../helpers/myExercise.json");
-  // console.log(exercises);
+  const exercises = require("../helpers/myExercise.json");
+  console.log(exercises);
     const route = useRoute();
 
   const { exercise } = route.params;

@@ -35,7 +35,8 @@
     "react-native-video": "^5.2.1",
     "react-native-web": "~0.19.6",
     "react-native-webview": "^13.6.4",
-    "styled-components": "^6.1.1"
+    "styled-components": "^6.1.1",
+    "expo-calendar": "~11.3.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0"

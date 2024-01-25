@@ -53,6 +53,26 @@ export default function PatientHome({ navigation }) {
           </Card.Content>
           <Card.Actions></Card.Actions>
         </Card>
+        <Card
+          onPress={() => navigation.navigate(`patient-calendar`)}
+          style={{ margin: 5, padding: 45, backgroundColor: `#E37737` }}
+        >
+          <Card.Content>
+          <Image
+          style={{
+            resizeMode: 'contain',
+            height: 150,
+            width: 150,
+            marginBottom:20
+          }}
+          source={require('../assets/calendar.png')}
+        />
+            <Text style={{ color: `white`, fontSize: 22,fontWeight:'500'}} variant="titleLarge">
+              Egzersiz Takvimi
+            </Text>
+          </Card.Content>
+          <Card.Actions></Card.Actions>
+        </Card>
       </View>
     </View>
   );

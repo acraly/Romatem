@@ -23,6 +23,7 @@ import { View, Button } from "react-native";
 import PatientHome from "../pages/PatientsHome";
 import PatientExercise from "../pages/PatientExercise";
 import ExerciseDetail from "../pages/ExerciseDetail";
+import PatientCalendar from "../pages/PatientCalendar";
 const AppRouter = () => {
   const Stack = createNativeStackNavigator();
   const Drawer = createDrawerNavigator();
@@ -65,6 +66,7 @@ const AppRouter = () => {
       <Stack.Screen options={{ headerShown: false}}  name="patient-home" component={PatientHome} />
       <Stack.Screen options={{title: "Egzersizlerim"}} name="patient-exercise" component={PatientExercise} />
       <Stack.Screen options={{title: "Detaylar"}} name="patient-exercise-detail" component={ExerciseDetail} />
+      <Stack.Screen options={{title: "Calendar"}} name="patient-calendar" component={PatientCalendar} />
    
     </Stack.Navigator>
   );
