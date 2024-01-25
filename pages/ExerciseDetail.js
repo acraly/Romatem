@@ -29,7 +29,7 @@ const ExerciseDetail = () => {
     <ScrollView  contentContainerStyle={styles.container}>
      <Video 
      ref={video}
-     source={{uri:"https://metamy.b-cdn.net/media/video/1.D%C3%B6nem/Front-End_Devolopment/10_Veri_T%C3%BCrleri___JAVASCRIPT_Dersleri.mp4"}}
+     source={{uri:"https://romatem.b-cdn.net/Denge%20%7C%20Uygulama%20Egzersizleri/Tandem.mp4"}}
      useNativeControls
      resizeMode='contain'
      isLooping
