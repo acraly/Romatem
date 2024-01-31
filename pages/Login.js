@@ -23,11 +23,11 @@ export default function LoginScreen({ navigation }) {
   const onLoginPressed = () => {
     const emailError = emailValidator(email.value)
     const passwordError = passwordValidator(password.value)
-    if (emailError || passwordError) {
-      setEmail({ ...email, error: emailError })
-      setPassword({ ...password, error: passwordError })
-      return
-    }
+    // if (emailError || passwordError) {
+    //   setEmail({ ...email, error: emailError })
+    //   setPassword({ ...password, error: passwordError })
+    //   return
+    // }
     signin()
     // navigation.reset({
     //   index: 0,
@@ -39,17 +39,18 @@ export default function LoginScreen({ navigation }) {
 
 
   const signin = () => {
-      signInWithEmailAndPassword(auth, email.value, password.value)
-        .then((userCredential) => {
-          console.log(userCredential.user)
-          // AsyncStorage.setItem("TOKEN", userCredential.user.uid);
-          navigation.navigate('patient-home', {user_id:userCredential.user.uid});
-        })
-        .catch((error) => {
-          const errorCode = error.code;
-          const errorMessage = error.message;
-          alert("Lütfen Bilgilerinizi Kontrol Ediniz");
-        });
+    navigation.navigate('patient-home');
+      // signInWithEmailAndPassword(auth, email.value, password.value)
+      //   .then((userCredential) => {
+      //     console.log(userCredential.user)
+      //     // AsyncStorage.setItem("TOKEN", userCredential.user.uid);
+      //     navigation.navigate('patient-home', {user_id:userCredential.user.uid});
+      //   })
+      //   .catch((error) => {
+      //     const errorCode = error.code;
+      //     const errorMessage = error.message;
+      //     alert("Lütfen Bilgilerinizi Kontrol Ediniz");
+      //   });
     };
 
 
